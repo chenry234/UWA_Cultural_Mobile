@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="nobg">
+<head>
+    <title>Venues</title>
+    <meta charset="utf-8">
+    <meta name="viewport"  content="width=320, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <script src="javascript/jquery-1.11.1.min.js"></script>
+
+
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+    <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="javascript/globalFunctions.js"></script>
+    <script src="javascript/getData.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script src="javascript/spin.min.js"></script>
+
+    <script>selectCSS();</script>
+
+    <style>
+        .header {
+            height: 57px;
+            line-height: 28px;
+        }
+
+        #headerText {
+            margin-top: 25px;
+        }
+        #map_canvas {
+            margin-left: 5px;
+            margin-right: 5px;
+
+        }
+
+        .link-button a {
+            line-height: 27px;
+            color: #42badf !important;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .ui-link a {
+            font-weight: normal !important;
+        }
+
+        .ui-btn a {
+            font-size: small;
+            font-weight: lighter;
+        }
+
+
+        .ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a {
+
+            font-size: 1.0em;
+        }
+
+        .ui-tabs .ui-tabs-hide {
+            position: absolute !important;
+            left: -10000px !important;
+            display:block !important;
+        }
+
+    </style>
+    <style type="text/css">
+        #index li.active {
+            font-weight: bold;
+        }
+
+        #index li.active ul {
+            font-weight: normal;
+            margin-left: -15px;
+        }
+
+        #poi ul.nobullet li {
+            margin-top: 20px;
+            width: 300px;
+            margin-right: 20px;
+        }
+
+
+
+        .nav-tabs>li {
+            width: 100px;
+        }
+
+        .iw div {
+            font-weight: lighter;
+        }
+
+
+    </style>
+
+</head>
+
+<body class="general-list news-page">
+<div class="cont">
+
+    <div class="header">
+        <a data-role="none" style="font-family: Lato, 'Helvetica Neue', san-serif !important; font-weight: normal;">Venues</a>
+        <div class="front-icon" style="float: right;margin-right: 12px;" onclick="window.open('settings.html', '_self');">
+            <img src="images/cog.png" style="width:30px; height: 30px;" />
+        </div>
+        <div class="front-icon" style="float: left;margin-left: 12px;" onclick=" $('#outer').toggle(200);">
+            <img src="images/menu.png" style="width:28px; height: 26px;" />
+        </div>
+
+    </div>
+
+
+    <div class="link-buttons-cont inner-nav" id="outer">
+        <div id="inner">
+            <div id="divhome" class="link-button buttonone people-button" onclick="window.open('home.html', '_self');"><div class="front-icon"><img src="images/home.png" alt="magnify" width="47" height="30" /></div><a href="home.html">Home</a></div>
+            <div id="divvenues" class="link-button buttonone people-button" onclick="window.open('venues.html', '_self');"><div class="front-icon"><img src="images/map.png" alt="magnify" width="47" height="30" /></div><a href="venues.html">Venues</a></div>
+            <div id="divexhibitions" class="link-button buttonone" onclick="window.open('exhibitions.html', '_self');">
+            <div class="front-icon"><img src="images/computer.png" alt="magnify" width="47" height="30"/></div>
+            <a href="exhibitions.html">Exhibitions</a></div>
+            <div id="divevents" class="link-button buttonthree" onclick="window.open('events.html', '_self');"><div class="front-icon"><img src="images/news.png" alt="clock" width="67" height="50" /></div><a href="events.html">Events</a></div>
+            <div id="divvideos" class="link-button buttonfour" onclick="window.open('videos.html', '_self');"><div class="front-icon"><img src="images/event.png" alt="airplane" width="67" height="50" /></div><a href="videos.html">Videos</a></div>
+            <div id="divartists" class="link-button buttonfour" onclick="window.open('artists.html', '_self');"><div class="front-icon"><img src="images/video.png" alt="airplane" width="67" height="50" /></div><a href="artists.html">Artists</a></div>
+        </div>
+    </div>
+
+
+
+
+    <div id="divspin"></div>
+    <div id="map_canvas" class="tweet-container" style="width: 95%;">
+
+    </div>
+
+
+        
+
+</div>
+
+
+<form name="mapform" id="mapform">
+    <input class="button" type="submit" value="" style="display: none;"/>
+</form>
+<script src="javascript/campus-map.js"></script>
+<script type="application/javascript">
+    initMenu("All", "Map");
+</script>
+
+
+</body>
+</html>

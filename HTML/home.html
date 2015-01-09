@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="home">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=320, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <script src="javascript/jquery-1.11.1.min.js"></script>
+    <script src="javascript/globalFunctions.js"></script>
+    <script src="javascript/blogs.js"></script>
+    <script src="javascript/beaconOffers.js"></script>
+    <script>
+        selectCSS();
+        saveBlogPosts('All');
+        saveEventPosts('All');
+        savePromoOffers();
+        saveClaimedPromoOffers();
+        selectHomePage();
+    </script>
+    <style>
+        .row {
+            float: left;
+            clear: both;
+            width: 100%
+        }
+    </style>
+
+</head>
+
+
+<body>
+<div class="header">
+    <!-- <img src="images/uwalogo.png" style="width:30px;height: 30px; "/> -->
+    <span style="font-size: 28px;">UWA Cultural Precinct</span>
+    <div class="front-icon" style="float: right;margin-right: 12px;" onclick="window.open('settings.html', '_self');">
+        <img src="images/cog.png" style="width:25px; height: 25px;"/>
+    </div>
+
+</div>
+<div class="big-four" style="width: 95%; margin: 2.5%;">
+    <div class="row">
+        <div class="button-one big-button-cont" onclick="window.open('venues.html', '_self');">
+            <div class="big-button">
+                <div class="button-people">
+                    <img src="images/map.png">
+                </div>
+
+
+                <div class="button-label" style="font-size: 0.8em;">Venues</div>
+            </div>
+        </div>
+        <div class="button-two big-button-cont" onclick="window.open('exhibitions.html', '_self');">
+            <div class="big-button">
+                <div class="button-places">
+                    <img src="images/social.png">
+                </div>
+
+                <div class="button-label" style="font-size: 0.8em;">Exhibitions</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="button-two big-button-cont" onclick="window.open('events.html', '_self');">
+            <div class="big-button">
+                <div class="button-places">
+                    <img src="images/event.png">
+                </div>
+
+                <div class="button-label" style="font-size: 0.8em;">Events</div>
+
+            </div>
+        </div>
+
+        <div class="button-one big-button-cont" onclick="window.open('videos.html', '_self');">
+            <div class="big-button">
+
+                <div class="button-people">
+                    <img src="images/video.png">
+                </div>
+
+                <div class="button-label" style="font-size: 0.8em;" >Videos</div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        
+        <div class="button-two big-button-cont" onclick="window.open('artists.html', '_self');">
+            <div class="big-button">
+                <div class="button-people">
+                    <img src="images/computer.png">
+                </div>
+
+
+            </div>
+            <div class="button-label" style="font-size: 0.8em;">Artists</div>
+        </div>
+    </div>
+    </div>
+
+
+</div>
+</div>
+</div>
+</body>
+</html>

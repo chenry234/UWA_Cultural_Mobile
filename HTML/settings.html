@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="nobg settings">
+<head>
+    <title>Settings</title>
+    <meta name="viewport"  content="width=320, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <script src="javascript/jquery-1.11.1.min.js"></script>
+    <script src="javascript/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/iphone.css">
+<!--     <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+ -->    <script src="javascript/globalFunctions.js"></script>
+
+
+</head>
+<body class="general-list news-page">
+<div class="cont">
+
+    <div class="header">
+        <a class="headerText">Settings</a>
+        <div class="front-icon" style="float: right;margin-right: 12px;" onclick="window.open('settings.html', '_self');">
+            <img src="images/cog.png" style="width:30px; height: 30px;" />
+        </div>
+        <div class="front-icon" style="float: left;margin-left: 12px;" onclick=" $('#outer').toggle(200);">
+            <img src="images/menu.png" style="width:28px; height: 26px;" />
+        </div>
+
+    </div>
+            
+
+
+    <div class="link-buttons-cont inner-nav" id="outer">
+        <div id="inner">
+            <div id="divhome" class="link-button buttonone people-button" onclick="window.open('home.html', '_self');"><div class="front-icon"><img src="images/home.png" alt="magnify" width="47" height="30" /></div><a href="home.html">Home</a></div>
+            <div id="divvenues" class="link-button buttonone people-button" onclick="window.open('venues.html', '_self');"><div class="front-icon"><img src="images/map.png" alt="magnify" width="47" height="30" /></div><a href="venues.html">Venues</a></div>
+            <div id="divexhibitions" class="link-button buttonone" onclick="window.open('exhibitions.html', '_self');">
+            <div class="front-icon"><img src="images/computer.png" alt="magnify" width="47" height="30"/></div>
+            <a href="exhibitions.html">Exhibitions</a></div>
+            <div id="divnews" class="link-button buttontwo" onclick="window.open('news.html', '_self');"><div class="front-icon"><img src="images/social.png" alt="laptop" width="67" height="50" /></div><a href="news.html">News</a></div>
+            <div id="divevents" class="link-button buttonthree" onclick="window.open('events.html', '_self');"><div class="front-icon"><img src="images/news.png" alt="clock" width="67" height="50" /></div><a href="events.html">Events</a></div>
+            <div id="divvideos" class="link-button buttonfour" onclick="window.open('videos.html', '_self');"><div class="front-icon"><img src="images/event.png" alt="airplane" width="67" height="50" /></div><a href="videos.html">Videos</a></div>
+            <div id="divartists" class="link-button buttonfour" onclick="window.open('artists.html', '_self');"><div class="front-icon"><img src="images/video.png" alt="airplane" width="67" height="50" /></div><a href="artists.html">Artists</a></div>
+        </div>
+    </div>
+
+
+
+
+
+       <!--  Current Students<input type="checkbox" id="isStudent" value="yes" onchange=""> -->
+<!--     <form>
+        <fieldset data-role="controlgroup">
+            <legend>Receive notifications for:</legend>
+            <input type="checkbox" name="isStudent" id="isStudent">
+            <label for="isStudent">Current Students</label>
+            <input type="checkbox" name="isOtherStudent" id="isOtherStudent">
+            <label for="isOtherStudent">Future of Past Students</label>
+        </fieldset>
+    </form>
+
+
+    <form>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+            <legend>Set Home Page:</legend>
+            <input type="radio" name="radio-choice-1" id="hpUWA" value="on" checked="checked">
+            <label for="hpUWA">UWA</label>
+            <input type="radio" name="radio-choice-1" id="hpAspire" value="off">
+            <label for="hpAspire">Aspire</label>
+            <input type="radio" name="radio-choice-1" id="hpFairway" value="other">
+            <label for="hpFairway">Fairway</label>
+        </fieldset>
+    </form> -->
+
+
+    <div class="white-bg" style="margin-top:6px; margin-left:6px; margin-right:6px">
+        <div id="accordion">
+                <h3>Settings</h3>
+                <div>
+
+                </div>
+                <h3>Contact Info</h3>
+                <div>
+                <h4>Cultural Precinct</h4>
+                <h5 style="font-size: 13px; font-family: Helvetica Neue">The UWA Cultural Precinct presents a dynamic, creative and intellectually rigorous program of exhibitions, performances and associated cultural activities that amplify current concern, flag future issues and provide a perspective from which to view the past.</h5>
+                <h6 style="font-size: 13px; font-family: Helvetica Neue">Address:</h6>
+                <ul style="font-size: 13px; font-family: Helvetica Neue">
+                    <li>Vice-Chancellery</li>
+                    <li>The University of Western Australia</li>
+                    <li>35 Stirling Highway, Crawley, Perth</li>
+                    <li>Western Australia 6009</li>
+                    <li>Telephone: (+61 8) 6488 3613</li>
+                    <li>Email: culturalprecinct@uwa.edu.au</li>
+                </ul>
+                <h6 style="font-size: 13px; font-family: Helvetica Neue">Location:</h6>
+                <ul style="font-size: 13px; font-family: Helvetica Neue">
+                    <li>First Floor, South Administration Entrance, Vice-Chancellery building on the Crawley campus.</li>
+                </ul>
+                <h4>UWA Centre for Software Practice</h4>
+                <ul style="font-size: 13px; font-family: Helvetica Neue">
+                    <li>Website: http://www.csp.uwa.edu.au</li>
+                    <li>Telephone: (08) 6488 2839</li>
+                    <li>Email: info@csp.uwa.edu.au</li>
+                </ul>
+                <br>
+                <p style="font-size: 13px; font-family: Helvetica Neue">This application is brought to you by the UWA Centre for Software Practice. If you have any feedback please contact:
+                <a href="mailto:info@csp.uwa.edu.au">info@csp.uwa.edu.au</a></p>
+                </div>
+
+            </div>
+        </div>
+
+    <script>
+
+        $( "#accordion" ).accordion({
+            collapsible: true
+        });
+        $( "#accordion" ).accordion( "option", "icons", null );
+
+        $( "#accordion" ).accordion({
+            active: false
+        });
+
+        
+    </script>
+
+</div>
+</body>
+</html>

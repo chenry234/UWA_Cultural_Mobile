@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="nobg">
+<head>
+    <title>Library</title>
+    <meta charset="utf-8">
+    <meta name="viewport"  content="width=320, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <script src="javascript/jquery-1.11.1.min.js"></script>
+    <script src="javascript/globalFunctions.js"></script>
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+    <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+    <script>selectCSS();</script>
+    <style type="text/css">
+        #index li.active {
+            font-weight: bold;
+        }
+
+        #index li.active ul {
+            font-weight: normal;
+            margin-left: -15px;
+        }
+
+        #poi ul.nobullet li {
+            margin-top: 20px;
+            width: 300px;
+            margin-right: 20px;
+        }
+
+
+        .header {
+            height: 26px;
+            line-height: 28px;
+        }
+
+        #headerText {
+            margin-top: 25px;
+        }
+
+        .link-button a {
+            line-height: 27px;
+            color: #42badf !important;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .ui-link a {
+            font-weight: normal !important;
+        }
+
+        .ui-btn a {
+            font-size: small;
+            font-weight: lighter;
+        }
+
+
+        .ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a {
+
+            font-size: 1.0em;
+        }
+
+        .iw div {
+            font-weight: lighter;
+        }
+
+        .nav-tabs>li {
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body class="general-list news-page event-page">
+<div class="cont">
+
+    <div class="header">
+        Artists
+        <div class="front-icon" style="float: right;margin-right: 12px;" onclick="window.open('settings.html', '_self');">
+            <img src="images/cog.png" style="width:30px; height: 30px;" />
+        </div>
+        <div class="front-icon" style="float: left;margin-left: 12px;" onclick=" $('#outer').toggle(200);">
+            <img src="images/menu.png" style="width:28px; height: 26px;" />
+        </div>
+    </div>
+
+    <div class="link-buttons-cont inner-nav" id="outer">
+        <div id="inner">
+            <div id="divhome" class="link-button buttonone people-button" onclick="window.open('home.html', '_self');"><div class="front-icon"><img src="images/home.png" alt="magnify" width="47" height="30" /></div><a href="home.html">Home</a></div>
+            <div id="divvenues" class="link-button buttonone people-button" onclick="window.open('venues.html', '_self');"><div class="front-icon"><img src="images/map.png" alt="magnify" width="47" height="30" /></div><a href="venues.html">Venues</a></div>
+            <div id="divexhibitions" class="link-button buttonone" onclick="window.open('exhibitions.html', '_self');">
+            <div class="front-icon"><img src="images/computer.png" alt="magnify" width="47" height="30"/></div>
+            <a href="exhibitions.html">Exhibitions</a></div>
+            <div id="divartworks" class="link-button buttontwo" onclick="window.open('artworks.html', '_self');">
+            <div class="front-icon"><img src="images/home.png" alt="laptop" width="67" height="50"/></div>
+            <a href="artworks.html">Artworks</a></div>
+            <div id="divnews" class="link-button buttontwo" onclick="window.open('news.html', '_self');"><div class="front-icon"><img src="images/social.png" alt="laptop" width="67" height="50" /></div><a href="news.html">News</a></div>
+            <div id="divevents" class="link-button buttonthree" onclick="window.open('events.html', '_self');"><div class="front-icon"><img src="images/news.png" alt="clock" width="67" height="50" /></div><a href="events.html">Events</a></div>
+            <div id="divvideos" class="link-button buttonfour" onclick="window.open('videos.html', '_self');"><div class="front-icon"><img src="images/event.png" alt="airplane" width="67" height="50" /></div><a href="videos.html">Videos</a></div>
+            <div id="divartists" class="link-button buttonfour" onclick="window.open('artists.html', '_self');"><div class="front-icon"><img src="images/video.png" alt="airplane" width="67" height="50" /></div><a href="artists.html">Artists</a></div>
+            
+
+        </div>
+    </div>
+
+    <div style="margin-top:12px; margin-left: 12px; margin-right: 12px;">
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Search Artworks..." data-inset="true">
+            <li><a href="#"><img src="images/terry.png">Artwork 1</a></li>
+            <li><a href="#"><img src="images/lenzuks.png">Artwork 2</a></li>
+            <li><a href="#">Artwork 3</a></li>
+            <li><a href="#">Artwork 4</a></li>
+            <li><a href="#">Artwork 5</a></li>
+            <li><a href="#">Artwork 6</a></li>
+        </ul>
+    </div>
+
+
+</body>
+</html>

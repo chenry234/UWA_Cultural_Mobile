@@ -1,0 +1,440 @@
+/************************************************************
+ 
+ GENERAL
+ 
+ *************************************************************/
+
+
+body, html {margin: 0; padding: 0;}
+
+html{
+    font-family: Lato, 'Helvetica Neue', san-serif;
+    font-size: 1.3em;
+    background-color: white;
+}
+
+body {
+    font-family: Lato, 'Helvetica Neue', san-serif !important;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    line-height: 1.3em;
+    padding-bottom:20px;
+    color: #000;
+}
+
+a {color: #1E68B2;}
+
+
+
+.cont {overflow:hidden;}
+
+
+.header {
+    margin: 0;
+	font-size: 42px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+
+    background: white;
+    color: #42badf;
+box-shadow:         0px 4px 9px 0px rgba(50, 50, 50, 0.32);
+}
+
+.header a {text-decoration: none;
+color: #42badf;}
+
+.header-longer-title {font-size: 1.3em}
+
+.small-content {font-size: 1em; padding: 10px;}
+
+
+.breadcrumbs {padding: 5px; color: #fff; text-align: center; background: #3390ad;
+    font-weight: lighter;}
+
+.breadcrumbs a {color: white !important;}
+
+/***************************************************************
+ 
+ HOME PAGE
+ 
+****************************************************************/
+
+.big-four {width: 100%;
+    overflow: hidden;
+    margin-top: 0.5em !important;}
+
+
+.big-four img {width: 100%}
+
+.big-button-cont{float: left;
+    width: 47%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.big-button {width: 30%; margin: 0.5em auto;}
+
+.button-label {margin-top: 0.5em; font-size: 1.0em; color: #42badf;
+}
+
+.button-one {border-right: 1px solid #f4fbfc;
+    border-bottom: 1px solid #f4fbfc;
+    padding: 1%;
+margin-right: 0}
+
+.button-two {
+    border-bottom: 1px solid #f4fbfc;
+    padding: 1%;}
+
+.button-three {
+    border-right: 1px solid #f4fbfc;
+    border-bottom: 0px solid #f4fbfc;
+    padding: 1%;}
+
+.button-four {
+    border-bottom: 0px solid #f4fbfc;
+    padding: 1%;}
+
+.bottom-button {border-radius: 5px;
+border: 1px solid #42badf;
+    padding: 1em;
+    color: #42badf;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+    width: 70% !important;
+    margin: 10px 7%;
+    
+}
+
+
+/************************************************************
+ 
+TOP BUTTONS
+ 
+ *************************************************************/
+
+/*SCROLLING*/
+
+#outer {
+    width: 100%;
+    height: 104px;
+    font-size: 16px;
+    overflow: auto;
+    position: relative;
+    border-bottom: 1px solid #42badf;
+}
+
+#inner {
+    width: 750px;
+}
+
+/*END SCROLLING*/
+
+.link-buttons-cont {margin-top: 1.5em; overflow:hidden; clear: both}
+
+.link-button {width: 11.1%; float: left; text-align: center; min-height: 4.8em; color: #fff; padding-top: 15px; font-size: 0.9em;}
+
+.link-button a {color: #42badf;
+ text-decoration: none;}
+
+.home a {color: #42badf;
+ text-decoration: none;}
+
+
+.people-button { min-height: 4.3em;}
+.places-button { min-height: 4.3em; }
+.events-button { min-height: 4.3em;}
+.more-button { min-height: 4.3em;}
+
+.front-icon {margin-bottom: 0.5em;}
+
+.front-icon img {width: 60%;
+    height: 60%;}
+
+.inner-nav {margin-top: 0em;}
+
+.thin img {display: block; float: right; padding-top: 2px;}
+
+/***************************
+ LONG BUTTONS
+ 
+ ****************************/
+
+.thin img {display: block; float: right; padding-top: 2px;}
+
+.thin {background: #42badf;
+    margin-bottom: 0em;
+    color: white;
+    text-align: left;
+    margin-top: 0.1em;
+    padding: 0.8em 10px;
+    width: 95%;
+    font-size: 1.2em;
+    
+}
+
+.thin-first {margin-top: 0em;}
+
+
+.thin a{color: white;
+    text-decoration: none;}
+
+
+.thin-content {background: white; padding: 5px 10px;}
+
+.thin-button {border-radius: 4px;
+    padding: 10px; display: block; width: 80%; margin: 0 auto;
+    background: #42badf; text-align: center; color: #fff; text-decoration: none; margin-top: 10px; margin-bottom: 5px; font-size: 1.2em; font-weight: bold;}
+.thinner {padding: 5px; margin-bottom: 2px; margin-top: 5px;}
+.thin-button a{}
+
+.long-thin {font-size: 1.0em}
+
+/*****************
+ 
+ NEWS AND PEOPLE AND BLOG
+ 
+ ******************/
+
+.person-image img {
+    width: 290px;
+    height: 200px;
+    position: relative}
+
+.news-image {
+    height: 250px;
+    position: relative;
+    background-repeat: no-repeat !important;
+    padding: 0 !important;}
+
+
+.news-info {position: absolute; bottom: 0; width: 100%;}
+
+.event-info {position: absolute; bottom: 0; width: 100%;}
+
+
+#event p {margin-top: 10px;}
+#event p span {font-weight: 200 !important;
+font-size: inherit !important}
+
+.news-item-cont {
+    width: 100%;
+    font-weight: 200;
+}
+
+.news-item-cont h2{ background: rgba(21, 149, 198, 0.82); color: #fff; margin-bottom: 0; padding-left: 2%; padding-right: 2%; line-height: 1em;
+    font-size: 1.0em !important;
+    padding-top: 5px; padding-bottom: 5px;
+    font-weight: 200;
+    }
+
+
+.event-info h3 {font-weight: 200; font-size: 0.8em !important; padding-left: 2% !important;}
+
+.news-page h3, .person-title, .news-item-cont h3 {
+    padding: 0.2em 0.42em;
+    background: #1595c6;
+    color: #fff;
+    margin: 0px;
+    font-size: 1.3em;}
+
+.show-all-button {color:rgba(23, 167, 208, 0.95); text-decoration: underline; background: white; padding: 0px 5px; font-size: 1.2em;}
+
+.news-page p,
+.person-blurb p,
+.read-more {padding: 0.2em 0.5em; font-size: 1.2em; margin: 0.5em 0; background: #F6F6F6;}
+
+.read-more a{display: block; text-align: right;}
+
+.single-news h2 {margin-top:0px;}
+
+#event p, .make-bigger-font p {font-size: 1em !important; line-height: 1.3em !important; padding-top: 10px;}
+
+#event, .make-bigger-font {font-size: 0.8em !important; line-height: 1.3em !important;}
+/************************************************************
+ 
+ GRID -FLICKR
+ 
+ *************************************************************/
+#wrap {
+    overflow: hidden;
+}
+.box {
+    width: 20%;
+    padding-bottom: 20%;
+    color: #FFF;
+    position: relative;
+    float: left;
+}
+.innerContent {
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    background: white;
+    padding: 0px;
+    border: 0px solid #000;
+}
+@media only screen and (max-width : 480px) {
+    /* Smartphone view: 1 tile */
+    .box {
+        width: 25%;
+        padding-bottom: 25%;
+    }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+    /* Tablet view: 2 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+    /* Small desktop / ipad view: 3 tiles */
+    .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+    }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+    /* Medium desktop: 4 tiles */
+    .box {
+        width: 25%;
+        padding-bottom: 25%;
+    }
+}
+
+/************************************************************
+ 
+ VIDEO
+ 
+ *************************************************************/
+
+iframe {border: 0px solid #fff;}
+
+.youtube #wrap, #tweetpage {background: #F9F9F9}
+
+.event-page #tweetpage {width: 90%;}
+
+.video-list-icon, .expand img{display: none;}
+
+.playlist-view, .tweet-container {
+    margin: 5px;
+    border: 1px solid #efefef;
+    padding: 10px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(50, 50, 50, 0.45);
+    -moz-box-shadow:    0px 2px 2px 0px rgba(50, 50, 50, 0.45);
+    box-shadow:         0px 2px 2px 0px rgba(50, 50, 50, 0.45);
+    overflow: hidden;
+    background: white;
+    padding-top: 10px;
+}
+
+.video-view {
+    border-bottom-color: #efefef;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.list-title {
+    font-size: 1em;
+    font-weight: 200;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    border-bottom: #efefef solid 1px;
+    margin-bottom: 10px; }
+
+.video-thumbnail {width: 30%; margin-right: 3%; float: left; padding-bottom: 10px;}
+
+.video-thumbnail img {width: 100% !important; height: auto !important; margin-left: 0px !important}
+
+.video-title {width: 60%; float: left;}
+.video-title p {margin-top: 0.3em; font-size: 0.8em; font-weight: 200; line-height: 1.1em}
+
+.show-all-button {text-decoration: none; font-weight: 200; font-size: 0.8em; }
+
+
+.tweet-container p {font-size: 0.8em; font-weight: 200; line-height: 1.2em; margin-top: 0px;}
+
+.tweet-container img{width: 290px; height: auto; margin-left: 10px;}
+
+/************************************************************
+ 
+FORM FEEDBACK
+ 
+ *************************************************************/
+
+
+
+.feedback form li, .feeback form ul {list-style-type: none;}
+
+.feedback form li {padding-top: 15px;}
+
+.feedback input, .feedback textarea{width: 90%; border-radius: 4px; border: 1px solid #A0A0A0; font-size: 1.2em !important; padding: 5px 10px; font-weight: 200; }
+
+.feedback .buttons {clear: both;}
+
+.feedback .buttons input {width: 50%; margin: 0 auto; display: block;}
+
+.feedback form ul {padding-left: 0px;}
+
+.feedback .face div {float: left; padding: 5px 10px;}
+
+.feedback .rate {width: 90%; margin: 0 auto;}
+
+.feedback .rate img {width: 15%; height: auto;}
+
+
+
+/************************************************************
+ GLOSSARY
+ 
+ *************************************************************/
+
+.glossary {font-size: 1.0em}
+
+.white-bg {}
+
+.singleitem .white-bg{background: white;
+    padding: 10px;}
+
+.singleitem p {font-size: 1.5em}
+
+
+.single-top-pic-cont {height: 150px;
+    width: 320px; }
+
+.single-top-pic {
+    width: 320px;
+    height: 150px;
+}
+
+.glos-title {font-weight: bold;}
+
+.item {margin-bottom: 10px;}
+
+.alpha-list {background: #42badf; padding: 10px 5px; color: #fff; font-size: 1.3em;}
+
+.alpha-list a {padding: 0 4px; color: #fff; font-weight: bold;}
+
+.alpha-group {}
+.letter {font-size: 2em; color:#42badf; font-weight: bold; text-decoration: none; }
+
+.category {
+    font-size: larger;
+    margin-top: 20px;
+    list-style: none;
+}
+
+

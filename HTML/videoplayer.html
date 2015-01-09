@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="nobg">
+<head>
+    <title>VideoPlayer</title>
+    <meta name="viewport"  content="width=320, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <script src="javascript/jquery-1.11.1.min.js"></script>
+    <script src="javascript/globalFunctions.js"></script>
+    <script>selectCSS();</script>
+</head>
+<body class="general-list gallery">
+<div class="cont">
+    <div class="header">
+        Video Player
+        <div class="front-icon" style="float: right;margin-right: 12px;" onclick="window.open('settings.html', '_self');">
+            <img src="images/cog.png" style="width:30px; height: 30px;" />
+        </div>
+        <div class="front-icon" style="float: left;margin-left: 12px;" onclick=" $('#outer').toggle(200);">
+            <img src="images/menu.png" style="width:28px; height: 26px;" />
+        </div>
+    </div>
+
+    <div class="link-buttons-cont inner-nav" id="outer">
+        <div id="inner">
+            <div id="divhome" class="link-button buttonone people-button" onclick="window.open('home.html', '_self');"><div class="front-icon"><img src="images/home.png" alt="magnify" width="47" height="30" /></div><a href="home.html">Home</a></div>
+            <div id="divvenues" class="link-button buttonone people-button" onclick="window.open('venues.html', '_self');"><div class="front-icon"><img src="images/map.png" alt="magnify" width="47" height="30" /></div><a href="venues.html">Venues</a></div>
+            <div id="divexhibitions" class="link-button buttonone" onclick="window.open('exhibitions.html', '_self');">
+            <div class="front-icon"><img src="images/computer.png" alt="magnify" width="47" height="30"/></div>
+            <a href="exhibitions.html">Exhibitions</a></div>
+            <div id="divevents" class="link-button buttonthree" onclick="window.open('events.html', '_self');"><div class="front-icon"><img src="images/news.png" alt="clock" width="67" height="50" /></div><a href="events.html">Events</a></div>
+            <div id="divvideos" class="link-button buttonfour" onclick="window.open('videos.html', '_self');"><div class="front-icon"><img src="images/event.png" alt="airplane" width="67" height="50" /></div><a href="videos.html">Videos</a></div>
+            <div id="divartists" class="link-button buttonfour" onclick="window.open('artists.html', '_self');"><div class="front-icon"><img src="images/video.png" alt="airplane" width="67" height="50" /></div><a href="artists.html">Artists</a></div>
+        </div>
+    </div>
+
+
+    <div class="gallery-grid video tweet-container" style="width: 90%;margin-top: 10px;">
+        <div  id="enlarged-image"></div>
+        <div id="wrap">
+        </div>
+
+    </div>
+
+
+</div>
+
+<script>
+    playVideo(getParameterByName("id"), getParameterByName("title"));
+    var topic = getParameterByName("topic");
+
+    if (topic) {
+        initMenu(topic, "Video")
+    } else {
+        initMenu("All", "Video")
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="nobg single-item">
+	<head>
+		<title>Event Item</title>
+            <meta name="viewport"  content="width=320, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+            <meta charset="utf-8">
+            <script src="javascript/jquery-1.11.1.min.js"></script>
+            <script src="javascript/globalFunctions.js"></script>
+            <script src="javascript/getData.js"></script>
+            <script src="javascript/jsrender.min.js"></script>
+            <script>selectCSS();</script>
+    </head>
+	<body class="general-list news-page">
+        <div class="cont">
+
+            <div class="header">
+                Event
+                <div class="front-icon" style="float: right;margin-right: 20px;" onclick="window.open('settings.html', '_self');">
+                    <img src="images/cog.png" style="width:30px; height: 30px;" />
+                </div>
+                <div class="front-icon" style="float: left;margin-left: 20px;" onclick=" $('#outer').toggle(200);">
+                    <img src="images/menu.png" style="width:30px; height: 30px;" />
+                </div>
+
+            </div>
+            
+            <div class="link-buttons-cont inner-nav" id="outer">
+                <div id="inner">
+                    <div id="divhome" class="link-button buttonone people-button" onclick="window.open('home.html', '_self');"><div class="front-icon"><img src="images/home.png" alt="magnify" width="47" height="30" /></div><a href="home.html">Home</a></div>
+                    <div id="divvenues" class="link-button buttonone people-button" onclick="window.open('venues.html', '_self');"><div class="front-icon"><img src="images/map.png" alt="magnify" width="47" height="30" /></div><a href="venues.html">Venues</a></div>
+                    <div id="divexhibitions" class="link-button buttonone" onclick="window.open('exhibitions.html', '_self');">
+                    <div class="front-icon"><img src="images/computer.png" alt="magnify" width="47" height="30"/></div>
+                    <a href="exhibitions.html">Exhibitions</a></div>
+                    <div id="divevents" class="link-button buttonthree" onclick="window.open('events.html', '_self');"><div class="front-icon"><img src="images/news.png" alt="clock" width="67" height="50" /></div><a href="events.html">Events</a></div>
+                    <div id="divvideos" class="link-button buttonfour" onclick="window.open('videos.html', '_self');"><div class="front-icon"><img src="images/event.png" alt="airplane" width="67" height="50" /></div><a href="videos.html">Videos</a></div>
+                    <div id="divartists" class="link-button buttonfour" onclick="window.open('artists.html', '_self');"><div class="front-icon"><img src="images/video.png" alt="airplane" width="67" height="50" /></div><a href="artists.html">Artists</a></div>
+                </div>
+            </div>
+            
+            <div class="news-item-cont single-news">
+            
+                <div id="event" class="tweet-container">
+                    <p>No Events Found.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <script id="eventItemTemplate" type="text/x-jsrender">
+                <img src="{{:imageName}}">
+                <h3>{{:title}} ({{:event_type}})</h3>
+                <h5>Starting: {{:startDate}}</h5>
+                <h5>Ending: {{:endDate}}</h5>
+                <h5>Location: {{:location}}</h5>
+                <h5>Duration: {{:duration}}</h5>
+                <p>{{:details}}</p>
+        </script>
+        
+        <script>
+            var cool = document.URL;
+            var lengthOfUrl = cool.length;
+            var urlid = parseInt((cool.substring(lengthOfUrl-2, lengthOfUrl-1)));
+
+            if (getParameterByName("Topic")) {
+                var topic = getParameterByName("Topic");
+                initMenu(topic, "Event");
+            } else {
+                initMenu("All", "Event");
+            }
+
+            // loadEvent(getParameterByName("id"));
+            var events = $.parseJSON(localStorage["eventData"]);
+
+            $.each(events, function (id, item) {
+                var data = {};
+                var template = $.templates("#eventItemTemplate");
+
+                if(item["id"] == urlid) {
+                    var data = {
+                        
+
+                        "id": item["id"],
+                        "title": item["title"],
+                        "details": item["details"],
+                        "startDate": fixDateAndTime(item["startDate"]),
+                        "endDate": fixDateAndTime(item["endDate"]),
+                        "imageName": item["imageName"],
+                        "location" : item["location"],
+                        "event_type" : item["event_type"],
+                        "duration" : item["duration"]
+                    };
+
+                    var durationInMinutes = parseInt(item.duration);
+                    if(durationInMinutes >= 60) {
+                        var hour = item.duration / 60;
+                        var minute = item.duration % 60;
+                        data["duration"] = hour + " hour(s) " + minute + " minutes.";
+                    } else {
+                        data["duration"] = item.duration + " minutes.";
+                    }
+
+                    var htmlOutput = template.render(data)
+                    $("#event").html(htmlOutput)
+                }
+
+
+
+                
+            });
+
+
+        </script>
+	</body>
+</html>

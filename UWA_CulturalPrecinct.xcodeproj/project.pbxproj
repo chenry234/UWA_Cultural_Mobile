@@ -13,6 +13,7 @@
 		BACC58921A4148600019ED26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACC58911A4148600019ED26 /* Images.xcassets */; };
 		BACC58951A4148600019ED26 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACC58931A4148600019ED26 /* LaunchScreen.xib */; };
 		BACC58A11A4148600019ED26 /* UWA_CulturalPrecinctTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC58A01A4148600019ED26 /* UWA_CulturalPrecinctTests.swift */; };
+		BACC58AB1A4148C60019ED26 /* HTML in Resources */ = {isa = PBXBuildFile; fileRef = BACC58AA1A4148C60019ED26 /* HTML */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		BACC589A1A4148600019ED26 /* UWA_CulturalPrecinctTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UWA_CulturalPrecinctTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACC589F1A4148600019ED26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BACC58A01A4148600019ED26 /* UWA_CulturalPrecinctTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWA_CulturalPrecinctTests.swift; sourceTree = "<group>"; };
+		BACC58AA1A4148C60019ED26 /* HTML */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HTML; path = ../HTML; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		BACC58871A4148600019ED26 /* UWA_CulturalPrecinct */ = {
 			isa = PBXGroup;
 			children = (
+				BACC58AA1A4148C60019ED26 /* HTML */,
 				BACC588A1A4148600019ED26 /* AppDelegate.swift */,
 				BACC588C1A4148600019ED26 /* ViewController.swift */,
 				BACC588E1A4148600019ED26 /* Main.storyboard */,
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BACC58901A4148600019ED26 /* Main.storyboard in Resources */,
+				BACC58AB1A4148C60019ED26 /* HTML in Resources */,
 				BACC58951A4148600019ED26 /* LaunchScreen.xib in Resources */,
 				BACC58921A4148600019ED26 /* Images.xcassets in Resources */,
 			);
